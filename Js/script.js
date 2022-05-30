@@ -1,13 +1,13 @@
 if (document.readyState == 'loading') {
-  document.addEventListener('DOMContentLoaded',ready)
+  document.addEventListener('DOMContentLoaded', ready)
 } else {
-  ready ()
+  ready()
 }
 
 function ready() {
   let theButtons = document.getElementsByClassName("btn")
 
-  for (let i = 0; i < theButtons.length; i++){
+  for (let i = 0; i < theButtons.length; i++) {
     let theButton = theButtons[i]
     theButton.addEventListener("click", textSwitchFunc)
   }
@@ -28,7 +28,7 @@ const countriesName = [
 ];
 
 const countriesPopulation = [
-  120000000,119000000,112000000,109000000,78000000,72000000,60000000,40000000,30000000,29000000
+  120000000, 119000000, 112000000, 109000000, 78000000, 72000000, 60000000, 40000000, 30000000, 29000000
 ]
 
 const theLanguages = [
@@ -44,10 +44,10 @@ const theLanguages = [
   'Serbian'
 ];
 
-const theLanguagesCount = [91,80,78,70,70,69,50,5,5,3]
+const theLanguagesCount = [91, 80, 78, 70, 70, 69, 50, 5, 5, 3]
 
 
-function onloadChart () {
+function onloadChart() {
   let textSpan = document.getElementsByClassName("switch-options")[0];
   document.getElementsByClassName("graph-section")[0].innerHTML = `<canvas id="myChart"></canvas>`
 
@@ -63,9 +63,9 @@ function onloadChart () {
     'Bangladash',
     'Japan'
   ];
-  
+
   const countriesPopulation = [
-    120000000,119000000,112000000,109000000,78000000,72000000,60000000,40000000,30000000,29000000
+    120000000, 119000000, 112000000, 109000000, 78000000, 72000000, 60000000, 40000000, 30000000, 29000000
   ]
 
   let data = {
@@ -85,6 +85,16 @@ function onloadChart () {
     options: {
       indexAxis: 'y',
       responsive: true,
+      elements: {
+        bar: {
+          borderWidth: 1,
+        }
+      },
+      plugins: {
+        legend: {
+          position: 'center',
+        },
+      },
     }
   };
 
@@ -96,9 +106,9 @@ function onloadChart () {
 
 onloadChart()
 
-function textSwitchFunc (e) {
+function textSwitchFunc(e) {
   let myChart = null
-  
+
   let theClickedBtn = e.target;
   let textSpan = document.getElementsByClassName("switch-options")[0];
   document.getElementsByClassName("graph-section")[0].innerHTML = `<canvas id="myChart"></canvas>`
@@ -123,6 +133,16 @@ function textSwitchFunc (e) {
       options: {
         indexAxis: 'y',
         responsive: true,
+        elements: {
+          bar: {
+            borderWidth: 1,
+          }
+        },
+        plugins: {
+          legend: {
+            position: 'center',
+          },
+        },
       }
     };
 
@@ -152,6 +172,16 @@ function textSwitchFunc (e) {
       options: {
         indexAxis: 'y',
         responsive: true,
+        elements: {
+          bar: {
+            borderWidth: 1,
+          }
+        },
+        plugins: {
+          legend: {
+            position: 'center',
+          },
+        },
       }
     };
 
@@ -161,4 +191,3 @@ function textSwitchFunc (e) {
     );
   }
 }
-
