@@ -85,16 +85,6 @@ function onloadChart() {
     options: {
       indexAxis: 'y',
       responsive: true,
-      elements: {
-        bar: {
-          borderWidth: 1,
-        }
-      },
-      plugins: {
-        legend: {
-          position: 'center',
-        },
-      },
     }
   };
 
@@ -110,6 +100,7 @@ function textSwitchFunc(e) {
   let myChart = null
 
   let theClickedBtn = e.target;
+  console.log(theClickedBtn)
   let textSpan = document.getElementsByClassName("switch-options")[0];
   document.getElementsByClassName("graph-section")[0].innerHTML = `<canvas id="myChart"></canvas>`
 
@@ -133,16 +124,6 @@ function textSwitchFunc(e) {
       options: {
         indexAxis: 'y',
         responsive: true,
-        elements: {
-          bar: {
-            borderWidth: 1,
-          }
-        },
-        plugins: {
-          legend: {
-            position: 'center',
-          },
-        },
       }
     };
 
@@ -172,16 +153,6 @@ function textSwitchFunc(e) {
       options: {
         indexAxis: 'y',
         responsive: true,
-        elements: {
-          bar: {
-            borderWidth: 1,
-          }
-        },
-        plugins: {
-          legend: {
-            position: 'center',
-          },
-        },
       }
     };
 
