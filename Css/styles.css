@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap');
+
+:root {
+  --mainWhite: white;
+  --mainBlack: black;
+  --yellow:#f2a93b;
+  --offWhite:#eeeff0;
+  --mainBlue: blue;
+}
+
+/* Start Of Global */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+}
+body {
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+  background-color: var(--offWhite);
+  /* color: var(--mainWhite) */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: o;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  outline: none;
+}
+
+img {
+  width: 100%
+}
+/* End Of Global */
+
+/* Start Of Index Styling */
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header > div > h1 {
+  color: var(--yellow);
+}
+
+header > div  {
+  margin: 3rem 0rem 1rem 0rem; 
+
+}
+
+header > div > p {
+  text-align: center;
+  font-weight: bold;
+}
+
+.option-section {
+  text-align: center;
+  margin: 2.5rem 0rem;
+}
+
+.population-Language {
+  display: flex;
+  justify-content:center;
+}
+
+.option-btn > button {
+  padding: 1rem 1.5rem;
+  margin: 0rem .9375rem 1rem 0rem;
+  border-radius: 10px;
+  cursor: pointer;
+  border:none;
+}
+
+.btn-population {
+  background-color: var(--yellow);
+  color: var(--mainWhite);
+  font-weight: bold;
+}
+
+.btn-languages {
+  background-color: var(--mainBlack);
+  color: var(--mainWhite);
+  font-weight: bold;
+}
+
+.switch-options {
+  font-weight: bold;
+  color: var(--mainBlue)
+}
+
+.graph-section {
+  border: 5px solid black;
+  border-radius: 0.625rem;
+  height: 50%;
+  margin: 0rem 20px;
+  width: auto;
+}
+
+canvas {
+  width: 600px;
+  height: 50px;
+}
+
+.btn:hover {
+  background-color: var(--mainWhite);
+  color: var(--mainBlack);
+  transition: all 1s ease-in-out
+}
+
+#myVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  -webkit-filter: grayscale(900%); 
+  opacity: 15%; 
+  /* filter: grayscale(500%); */
+
+}
+
+#myChart {
+  height: 50%;
+  width:50%
+}
+
+.body-container {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+  canvas {
+    position: relative;
+    left: 150px
+  }
+}

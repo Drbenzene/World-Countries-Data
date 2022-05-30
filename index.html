@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./Css/styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <title>World Countries Data</title>
+</head>
+
+<body>
+
+  <video autoplay muted loop id="myVideo">
+    <source src="./Img/World - 1992.mp4" type="video/mp4">
+  </video>
+  
+  <div class="body-container">
+
+
+    <header>
+      <div>
+        <h1>World Countries Data</h1>
+        <p>Currently, We have 250 Countries</p>
+      </div>
+    </header>
+    <hr>
+
+    <div class="option-section">
+
+      <div class="option-btn">
+        <button class="btn btn-population">POPULATION</button>
+        <button class="btn btn-languages">LANGUAGES</button>
+      </div>
+
+      <p>Ten most <span class="switch-options">POPULATED COUNTRIES</span> in the world</p>
+
+    </div>
+
+    <section>
+      <div class="graph-section">
+        <canvas id="myChart"></canvas>
+      </div>
+    </section>
+
+
+  </div>
+
+  <script type="text/javascript" src="./Js/script.js"></script>
+</body>
+
+</html>
