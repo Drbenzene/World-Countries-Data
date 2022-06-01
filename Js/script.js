@@ -48,7 +48,6 @@ const theLanguagesCount = [91, 80, 78, 70, 70, 69, 50, 5, 5, 3]
 
 
 function onloadChart() {
-  let textSpan = document.getElementsByClassName("switch-options")[0];
   document.getElementsByClassName("graph-section")[0].innerHTML = `<canvas id="myChart"></canvas>`
 
   const countriesName = [
@@ -94,7 +93,7 @@ function onloadChart() {
   );
 }
 
-onloadChart()
+// onloadChart()
 
 function textSwitchFunc(e) {
   let myChart = null

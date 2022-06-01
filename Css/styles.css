@@ -112,13 +112,22 @@ header > div > p {
   align-items: center;
 }
 
-canvas {
+.canvas-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  height: 160px;
+  width: 160px;
+}
+
+/* canvas {
   width: 600px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .btn:hover {
   background-color: var(--mainWhite);
@@ -138,12 +147,6 @@ canvas {
   /* filter: grayscale(500%); */
 
 }
-
-.canvas-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 #myChart {
   height: 50%;
   width:50%
@@ -159,9 +162,6 @@ canvas {
 
 
 @media only screen and (max-width: 768px) {
-  /* canvas {
-    position: relative;
-    left: 150px
-  } */
+
   
 }
